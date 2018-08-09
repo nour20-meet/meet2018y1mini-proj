@@ -17,6 +17,28 @@ pos_list = []
 stamp_list = []
 food_pos = []
 food_stamps = []
+#label
+label_game=turtle.Turtle()
+label_game.ht()
+label_game.penup()
+label_game.color('black')
+label_game.width('10')
+label_game.goto(-100,350)
+label_game.pendown()
+label_game.write('SNAKE GAME!',font=("Arial",30,"normal"))
+
+#numbers label!
+score = 0
+num_label=turtle.Turtle()
+num_label.ht()
+num_label.penup()
+num_label.color('black')
+num_label.width('10')
+num_label.goto(0,-400)
+num_label.write(str (score))
+ 
+    
+                         
 
 #Set up positions (x,y) of boxes that make up the snake
 snake = turtle.clone()
